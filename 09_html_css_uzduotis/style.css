@@ -1,0 +1,17 @@
+.first.container > .row:nth-child(odd) .col:nth-child(odd),
+.first.container > .row:nth-child(even) .col:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+.mb-5.mt-5.second.container > .row > .col:first-child {
+  background-color: aquamarine;
+}
+.mb-5.mt-5.second.container > .row > .col:nth-child(2) {
+  background-color: beige;
+}
+.mb-5.mt-5.second.container > .row > .col:nth-child(3) {
+  background-color: wheat;
+}
+.mb-5.mt-5.second.container > .row > .col:last-child     {
+  background-color: darkred;
+}

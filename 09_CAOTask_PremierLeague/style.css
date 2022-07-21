@@ -1,0 +1,62 @@
+body {
+  background-color: #202739;
+}
+header {
+  text-align: center;
+}
+img {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 25%;
+}
+h1 {
+  font-size: xxx-large;
+  font-weight: 300;
+  color: #fff843;
+}
+header p {
+  color: #f86478;
+  font-size: larger;
+  font-weight: 300;
+}
+table {
+  width: 80%;
+  margin: 50px auto;
+  color: #a7a1ae;
+  font-size: 20px;
+  text-align: left;
+}
+td,
+th {
+  border: 1px solid #202739;
+  border-collapse: collapse;
+  padding: 8px 0 8px 12px;
+}
+.cyan {
+  color: #4ec2fa;
+}
+.green {
+  background-color: #14dc4c;
+}
+.yellow {
+  background-color: #ffcd00;
+}
+.red {
+  background-color: #dd0000;
+}
+.square {
+  display: inline-block;
+  color: white;
+  border-radius: 3px;
+  padding: 9px;
+  width: 24px;
+  text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #323c50;
+}
+tr:nth-child(2n+3) {
+    background-color: #2d3447;;
+}
+/* kas antra eilutė, pradedant nuo trečios */
