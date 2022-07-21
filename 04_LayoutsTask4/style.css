@@ -1,0 +1,50 @@
+body {
+  font-size: 0;
+  background-color: #f5ebe0;
+  color: #6b6763;
+  width: 90%;
+  margin: 20px auto;
+}
+div {
+  font-size: 20px;
+  background-color: #e3d5ca;
+  border: 1px solid #d6ccc2;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.square {
+  width: 15.25%;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 70px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.box {
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 50px 0px;
+  margin-bottom: 3%;
+}
+.middle {
+  margin: 0 5% 3%;
+}
+.right {
+  margin-right: 13%;
+}
+.logo,
+.nav {
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.logo {
+  border-right: #e3d5ca;
+  text-align: left;
+}
+.nav {
+  border-left: #e3d5ca;
+}

@@ -1,0 +1,21 @@
+body {
+  font-size: 0;
+  width: 800px
+}
+.left, .right {
+  display: inline-block;
+  width: 50%;
+  font-size: 15pt;
+  text-align: justify;
+  vertical-align: top;
+}
+.top {
+  font-size: 15pt;
+  text-align: center;
+}
+h2 {
+  font-weight: 100;
+}
+img {
+  width: 400px;
+}

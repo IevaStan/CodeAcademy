@@ -1,0 +1,41 @@
+body {
+  font-size: 0;
+  background-color: #f5ebe0;
+  color: #6b6763;
+  width: 90%;
+  margin: 20px auto;
+}
+div {
+  font-size: 20px;
+  background-color: #e3d5ca;
+  border: 1px solid #d6ccc2;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.sideBar {
+  width: 25.5%;
+  margin-right: 0.25%;
+}
+.bodyArea {
+  width: 74%;
+  margin-left: 0.25%;
+}
+.sideBar,
+.bodyArea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 150px 0px; /* Kodėl neveikia vertical-align?  */
+}
+.nav,
+.headerBanner,
+.sideBar,
+.bodyArea,
+footer {
+  text-align: center;
+}
+.headerBanner {
+  padding: 50px 0px;
+}

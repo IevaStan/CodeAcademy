@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(233, 231, 231);
+}
+header,
+section {
+  background-color: rgb(251, 251, 251);
+  text-align: center;
+  max-width: 80%;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px lightgrey;
+  padding: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  padding: 1%;
+}
+header img,
+.shop img {
+  max-width: 200px;
+}
+.aboutus img,
+.contact img {
+  width: 100%;
+}
+p {
+  text-align: justify;
+  font-size: large;
+}
+.shop p,
+footer {
+  text-align: center;
+}
+.bold,
+ul {
+  font-weight: bold;
+}
+ul {
+  text-align: left;
+  font-size: larger;
+}
+footer {
+  color: darkslategrey;
+}
+.shop h3,
+.shop p {
+  line-height: 10%;
+}

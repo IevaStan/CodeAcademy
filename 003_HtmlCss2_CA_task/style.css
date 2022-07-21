@@ -1,0 +1,22 @@
+header,
+footer {
+  text-align: center;
+}
+main {
+  width: 50%;
+  /* background-image:url(https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/codepen-vNWpwO.png);
+  background-repeat:no-repeat;
+  background-size: cover; */
+}
+footer {
+  color: grey;
+  font-size: smaller;
+  font-style: italic;
+  padding: 5px;
+}
+p {
+  text-align: justify;
+}
+img {
+  height: 300px;
+}

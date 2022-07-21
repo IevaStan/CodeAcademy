@@ -1,0 +1,19 @@
+body {
+  font-size: 0;
+}
+.left,
+.right {
+  display: inline-block;
+  width: 50%;
+  font-size: 15px;
+}
+h3 {
+  font-weight: bold;
+}
+h2 {
+  font-weight: 200;
+}
+.center {
+  text-align: center;
+  font-size: 15px;
+}

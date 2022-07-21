@@ -1,0 +1,13 @@
+body {
+  font-size: 0;
+}
+.box {
+  font-size: 15px;
+  background-color: yellow;
+  padding: 5px;
+  border: 1px solid black;
+  height: 100px;
+  width: 25%;
+  display: inline-block;
+  box-sizing: border-box;
+}

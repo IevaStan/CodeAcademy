@@ -1,0 +1,71 @@
+body {
+  font-size: 0px;
+}
+header div {
+  font-size: 20px;
+  width: 50%;
+  min-height: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgb(240, 239, 239);
+  vertical-align: top;
+  padding: 15px;
+}
+menu {
+  text-align: right;
+}
+menu a,
+footer a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: black;
+}
+body > :nth-child(2) {
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+  margin: 10px 0;
+  background-color: rgb(240, 239, 239);
+}
+body > :nth-child(2) h1 {
+  text-transform: uppercase;
+}
+
+body > :nth-child(3) div,
+body > :nth-child(4) div {
+  font-size: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: justify;
+  vertical-align: top;
+  background-color: rgb(240, 239, 239);
+  margin-bottom: 10px;
+}
+body > :nth-child(3) img,
+body > :nth-child(4) img {
+  width: 100%;
+}
+body > :nth-child(5) {
+  font-size: 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  vertical-align: top;
+  background-color: rgb(240, 239, 239);
+}
+
+body > :nth-child(3) > :nth-child(1),
+body > :nth-child(4) > :nth-child(2) {
+  width: 70%;
+}
+body > :nth-child(3) > :nth-child(2),
+body > :nth-child(4) > :nth-child(1) {
+  width: 30%;
+}
+body div {
+  background-color: rgb(240, 239, 239);
+  margin-bottom: 10px;
+}
