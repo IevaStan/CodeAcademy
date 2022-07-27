@@ -65,4 +65,5 @@ textarea {
 input:invalid,
 input:out-of-range {
   border: 2px solid red;
+  
 }
