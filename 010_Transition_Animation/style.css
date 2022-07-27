@@ -1,0 +1,19 @@
+.super-divas {
+    width: 150px;height: 150px;
+    background-color: red;
+    /*cia apsirasom kiek laiko trunka, butent plociui*/
+    transition: width 3s;
+    /*atidejimo laikas*/
+    /*transition-delay: 5s;*/
+    /*animation-name: betkoks;*/
+    animation-duration: 4s;
+}
+@keyframes betkoks {
+    from {background-color: green;}
+    to {background-color: yellow;}
+}
+.super-divas:hover {
+    /*background-color: green;*/
+    /*width: 300px;*/
+    /*animation-name: betkoks;*/
+}

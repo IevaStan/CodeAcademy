@@ -1,0 +1,94 @@
+.orange > div {
+  background-color: orange;
+}
+.yellow > div {
+  background-color: yellow;
+}
+.blue > div {
+  background-color: blue;
+}
+.grey > div {
+  background-color: lightgray;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 767px) {
+  body > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  body > div > div {
+    margin: 1%;
+  }
+  .orange > div,
+  .grey > div {
+    height: 100px;
+  }
+  .yellow > div {
+    height: 150px;
+  }
+  .blue > div {
+    height: 200px;
+  }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) {
+  body > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  body > div > div {
+    margin: 1%;
+  }
+  .orange > div {
+    height: 100px;
+  }
+  .yellow > div {
+    height: 200px;
+  }
+  .blue > div,
+  .grey > div {
+    height: 150px;
+  }
+  .grey {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grey > div {
+    width: 48%;
+  }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1024px) {
+  body > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1%;
+  }
+  body > div > div {
+    margin: 0.5%;
+  }
+  .orange > div {
+    height: 150px;
+    width: 49%;
+  }
+  .yellow > div {
+    height: 450px;
+    width: 100%;
+  }
+  .blue > div {
+    height: 200px;
+    width: 32.33%;
+  }
+  .grey > div {
+    height: 150px;
+    width: 24%;
+  }
+}

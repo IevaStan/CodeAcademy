@@ -1,0 +1,38 @@
+body {
+  width: 100%;
+  background-image: url("sea.jpg");
+  background-repeat: no-repeat;
+  background-position: top, center;
+  background-size: cover;
+}
+form {
+  width: 60%;
+  background-color: white;
+  vertical-align: top;
+  margin: 5% auto;
+  padding: 50px 30px;
+}
+h1 {
+  text-align: center;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0px 30px 0px 0px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+}
+label {
+  font-weight: bold;
+}
+button {
+  color: white;
+  background-color: rgb(53, 53, 53);
+  border: 0px;
+  padding: 5px 50px;
+}
+@media screen and (max-width: 800px) {
+   
+}

@@ -1,0 +1,40 @@
+body {
+  background-color: #030a0e;
+  color: #c9cdcd;
+}
+nav,
+main {
+  padding: 15px;
+  background-color: #04141d;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
+a:hover {
+  color: #eb334c;
+  text-decoration-line: underline;
+}
+.star {
+  display: inline-block;
+  box-sizing: border-box;
+  color: yellow;
+  
+}
+.star > img:first-child {
+  height: 32px;
+  vertical-align: middle;
+}
+.star > img:nth-child(2) {
+  height: 14px;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.star > a {
+  color: #c9cdcd;
+margin-left: 500px;
+}
