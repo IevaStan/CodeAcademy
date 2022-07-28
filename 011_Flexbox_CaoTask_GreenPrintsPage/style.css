@@ -1,0 +1,57 @@
+:root {
+    --main-color: #9fb11c;
+  }
+body {
+  background-image: url("pat.png");
+}
+header,
+main {
+  max-width: 95%;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header > img {
+  height: 3em;
+}
+a {
+  text-decoration: none;
+  color: #3b4205;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+main {
+  display: flex;
+  background-color: white;
+  text-align: justify;
+}
+main > div {
+  padding: 20px;
+}
+main > div:first-child {
+  flex: 2;
+}
+main > div:last-child {
+  flex: 3;
+}
+div > img {
+  max-width: 50%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 11px;
+  border: none;
+  float: right;
+}
+footer {
+  color: darkslategray;
+  text-align: center;
+}
