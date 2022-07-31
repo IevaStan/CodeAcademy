@@ -1,0 +1,136 @@
+:root {
+  --grey: #b6b6b6;
+  --lgrey: rgb(241, 241, 241);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin: 30px;
+}
+nav img {
+  max-height: 30px;
+  padding: 10px 10px 10px 0px;
+}
+menu a {
+  flex-grow: 1;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--grey);
+}
+menu a:nth-child(1n + 5) {
+  flex-grow: 0;
+}
+menu a:last-child {
+  color: white;
+  background-color: var(--grey);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+menu a:hover {
+  background: var(--lgrey);
+}
+nav label,
+#menuicon {
+  display: none;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px;
+}
+main img {
+  object-fit: cover;
+  vertical-align: middle;
+  padding: 0 30px 30px 0;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 767px) {
+  menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--grey);
+  }
+  menu a:nth-child(1n + 5) {
+    width: calc(100% / 3 - 3px);
+  }
+  menu a:last-child {
+    width: 100%;
+  }
+  nav label {
+    display: inline-block;
+    color: var(--grey);
+    font-size: 2em;
+    padding: 10px 10px;
+  }
+  menu {
+    display: none;
+  }
+  nav input:checked ~ menu {
+    display: block;
+  }
+  /* nav input:checked ~ nav label {
+    display: none;
+  } Menu linkų nerodo per visą plotį, nes menu užima tik dalį nav juostos. 
+  Kaip nukelti menu nuorodas po logo + menu icon, paspaudus menuicon?  */
+
+  
+  main img {
+    width: calc(50% - 15px);
+    height: 35vh;
+  }
+  main img:nth-child(even) {
+    padding: 0 0 30px 0;
+  }
+}
+/* TABLET VERSION */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  nav {
+    width: calc(100% - 60px);
+  }
+  menu {
+    display: flex;
+    align-items: center;
+  }
+  menu a:nth-child(5),
+  menu a:last-child {
+    margin-left: 30px;
+  }
+  main img {
+    width: calc(100% / 3 - 20px);
+    height: 30vh;
+  }
+  main img:nth-child(3n) {
+    padding: 0 0 30px 0;
+  }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1200px) {
+  nav {
+    width: calc(100% - 60px);
+  }
+  menu {
+    display: flex;
+    align-items: center;
+  }
+  menu a:nth-child(5),
+  menu a:last-child {
+    margin-left: 30px;
+  }
+  main img {
+    width: calc(100% / 5 - 24px);
+    height: 35vh;
+  }
+  main img:nth-child(5n) {
+    padding: 0 0 30px 0;
+  }
+}
