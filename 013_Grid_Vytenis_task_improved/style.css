@@ -1,0 +1,140 @@
+.container > div > div,
+.main {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+.header-1,
+.header-2 {
+  background-color: orange;
+}
+.main {
+  background-color: greenyellow;
+  grid-area: main;
+}
+.article-1,
+.article-2,
+.article-3 {
+  background-color: blue;
+}
+.footer-1,
+.footer-2,
+.footer-3,
+.footer-4 {
+  background-color: lightgray;
+}
+.header-1 {
+  grid-area: header1;
+}
+.header-2 {
+  grid-area: header2;
+}
+.article-1 {
+  grid-area: article1;
+}
+.article-2 {
+  grid-area: article2;
+}
+.article-3 {
+  grid-area: article3;
+}
+.footer-1 {
+  grid-area: footer1;
+}
+.footer-2 {
+  grid-area: footer2;
+}
+.footer-3 {
+  grid-area: footer3;
+}
+.footer-4 {
+  grid-area: footer4;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 785px) {
+  .header-1,
+  .header-2,
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    height: 50px;
+  }
+  .main {
+    height: 75px;
+  }
+  .article-1,
+  .article-2,
+  .article-3 {
+    height: 100px;
+  }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 786px) and (max-width: 1199px) {
+  .footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "footer1 footer2" "footer3 footer4";
+  }
+  .header-1,
+  .header-2 {
+    height: 50px;
+  }
+  .main {
+    height: 150px;
+  }
+  .article-1,
+  .article-2,
+  .article-3,
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    height: 75px;
+  }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1200px) {
+  .header,
+  .article,
+  .footer {
+    display: grid;
+  }
+  .header {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header1 header2";
+  }
+  .article {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "article1 article2 article3";
+  }
+  .footer {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "footer1 footer2 footer3 footer4";
+  }
+  .header-1,
+  .header-2 {
+    height: 50px;
+  }
+  .main {
+    height: 200px;
+  }
+  .article-1,
+  .article-2,
+  .article-3 {
+    height: 100px;
+  }
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    height: 75px;
+  }
+}

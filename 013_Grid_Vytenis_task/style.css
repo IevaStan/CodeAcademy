@@ -1,0 +1,154 @@
+main div {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+}
+main div:nth-child(1),
+main div:nth-child(2) {
+  background-color: orange;
+}
+main div:nth-child(3) {
+  background-color: greenyellow;
+}
+main div:nth-child(4),
+main div:nth-child(5),
+main div:nth-child(6) {
+  background-color: blue;
+}
+main div:nth-child(7),
+main div:nth-child(8),
+main div:nth-child(9),
+main div:nth-child(10) {
+  background-color: lightgray;
+}
+
+/* MOBILE VERSION */
+@media only screen and (max-width: 785px) {
+  main div {
+    width: 100%;
+  }
+  main div:nth-child(1),
+  main div:nth-child(2),
+  main div:nth-child(7),
+  main div:nth-child(8),
+  main div:nth-child(9),
+  main div:nth-child(10) {
+    height: 50px;
+  }
+  main div:nth-child(3) {
+    height: 75px;
+  }
+  main div:nth-child(4),
+  main div:nth-child(5),
+  main div:nth-child(6) {
+    height: 100px;
+  }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 786px) {
+  main {
+    display: grid;
+  }
+  main div:nth-child(1) {
+    grid-area: 1/1/2/3;
+  }
+  main div:nth-child(2) {
+    grid-area: 2/1/3/3;
+  }
+  main div:nth-child(3) {
+    grid-area: 3/1/4/3;
+  }
+  main div:nth-child(4) {
+    grid-area: 4/1/5/3;
+  }
+  main div:nth-child(5) {
+    grid-area: 5/1/6/3;
+  }
+  main div:nth-child(6) {
+    grid-area: 6/1/7/3;
+  }
+  main div:nth-child(7) {
+    grid-area: 7/1/8/2;
+  }
+  main div:nth-child(8) {
+    grid-area: 7/2/8/3;
+  }
+  main div:nth-child(9) {
+    grid-area: 8/1/9/2;
+  }
+  main div:nth-child(10) {
+    grid-area: 8/2/9/3;
+  }
+  main div:nth-child(1),
+  main div:nth-child(2),
+  main div:nth-child(7),
+  main div:nth-child(8),
+  main div:nth-child(9),
+  main div:nth-child(10) {
+    height: 50px;
+  }
+  main div:nth-child(3) {
+    height: 150px;
+  }
+  main div:nth-child(4),
+  main div:nth-child(5),
+  main div:nth-child(6) {
+    height: 75px;
+  }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1200px) {
+  main {
+    display: grid;
+  }
+  main div:nth-child(1) {
+    grid-area: 1/1/2/4;
+  }
+  main div:nth-child(2) {
+    grid-area: 1/4/2/7;
+  }
+  main div:nth-child(3) {
+    grid-area: 2/1/3/7;
+  }
+  main div:nth-child(4) {
+    grid-area: 3/1/4/3;
+  }
+  main div:nth-child(5) {
+    grid-area: 3/3/4/5;
+  }
+  main div:nth-child(6) {
+    grid-area: 3/5/4/7;
+  }
+  main div:nth-child(7) {
+    grid-area: 6/1/7/2;
+  }
+  main div:nth-child(8) {
+    grid-area: 6/2/7/4;
+  }
+  main div:nth-child(9) {
+    grid-area: 6/4/7/6;
+  }
+  main div:nth-child(10) {
+    grid-area: 6/6/7/7;
+  }
+  main div:nth-child(1),
+  main div:nth-child(2) {
+    height: 75px;
+  }
+  main div:nth-child(3) {
+    height: 220px;
+  }
+  main div:nth-child(4),
+  main div:nth-child(5),
+  main div:nth-child(6) {
+    height: 150px;
+  }
+  main div:nth-child(7),
+  main div:nth-child(8),
+  main div:nth-child(9),
+  main div:nth-child(10) {
+    height: 100px;
+  }
+}
