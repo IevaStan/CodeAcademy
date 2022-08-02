@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --maincolor: #ff6348;
+  --mainlight: #fbd7b5;
+  --maindark: #0c2461;
+  --mainlightb: #3c6382;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+header {
+  font-size: 1.1em;
+}
+.contacts,
+.navigation,
+.phone-email,
+.social,
+.navlinks ul,
+.offer,
+.offer ul,
+.features,
+.advantages {
+  display: flex;
+}
+.contacts,
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts {
+  box-shadow: 0px 13px 10px -15px lightblue;
+  padding: 10px 0;
+}
+.navigation,
+.offer {
+  padding: 10px 30px;
+}
+.navlinks > ul,
+.offer ul,
+.advantages ul {
+  list-style-type: none;
+}
+.navlinks > ul > li {
+  padding: 0 1em;
+}
+.phone-email,
+.offer {
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: var(--maincolor);
+}
+.social a {
+  font-size: 2em;
+  padding: 0 5px;
+  color: var(--maincolor);
+}
+.phone-email * {
+  padding: 0 5px;
+}
+header p {
+  color: var(--maindark);
+}
+.button {
+  background-color: var(--maincolor);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.offer {
+  background-color: var(--mainlight);
+}
+.offer ul,
+.advantages ul {
+  align-items: center;
+  padding: 0;
+}
+h1 {
+  color: var(--maindark);
+  font-size: xxx-large;
+}
+h2 {
+  color: var(--maindark);
+}
+h3 {
+  color: var(--maincolor);
+  text-transform: uppercase;
+}
+.offer h2 {
+  margin-left: 20px;
+}
+main p {
+  color: var(--mainlightb);
+}
+.features {
+  align-items: center;
+}
+.advantages ul {
+  padding-right: 20px;
+}
+.advantages a {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: var(--maindark);
+  text-decoration: none;
+  padding-bottom: 1em;
+  padding-right: 15px;
+}
+.fa-check::first-letter {
+  color: var(--maincolor);
+  padding-right: 0.5em;
+}
+main img {
+  max-width: 60vw;
+  margin: 30px;
+}

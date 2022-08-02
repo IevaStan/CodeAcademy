@@ -1,0 +1,92 @@
+:root {
+  --maincolor: #ff6348;
+  --mainlight: #fbd7b5;
+  --maindark: #0c2461;
+}
+.contacts,
+.contacts > div:first-child,
+.navigation,
+.navigation ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+.contacts,
+.navigation {
+  justify-content: space-between;
+}
+.contacts {
+  border-bottom: 1px solid lightgrey;
+}
+.contacts > div:first-child > a {
+  padding: 0px 5px 0 30px;
+  color: var(--maincolor);
+  text-decoration: none;
+}
+.contacts > div:first-child > p {
+  color: var(--maindark);
+}
+.contacts > div:nth-child(2) > a {
+  padding: 0 5px;
+  color: var(--maincolor);
+  font-size: 2em;
+  text-decoration: none;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation li a {
+  text-decoration: none;
+  margin: auto 10px;
+  color: var(--maindark);
+}
+.shopButton {
+  color: white;
+  background-color: var(--maincolor);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.offer,
+.about {
+  display: flex;
+  background-color: var(--mainlight);
+  align-items: center;
+}
+.offer > div,
+.about > div {
+  width: 50%;
+  height: 48vh;
+}
+.offer > div {
+  margin-left: 30px;
+}
+
+@keyframes jumping {
+  0% {
+      top: 3px;
+  }
+
+  50% {
+      top: -3px;
+  }
+
+  100% {
+      top: 3px;
+  }
+}
+
+.offer > div > img,
+.about > div > img {
+  max-width: 100%;
+  max-height: 46vh;
+}
+
+.offer > div:first-child > div {
+  display: flex;
+  justify-content: space-around;
+}
+.features {
+  display: flex;
+  width: 100%;
+}
