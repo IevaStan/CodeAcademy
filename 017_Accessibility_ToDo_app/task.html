@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Task edition page for ToDo app">
+    <title>To Do page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Best <span class="boldBlue">ToDo</span> App</h1>
+      <ul>
+        <li><a href="#" class="fa fa-facebook" aria-label="facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter" aria-label="twitter"></a></li>
+        <li><a href="#" class="fa fa-linkedin-square" aria-label="linkedin"></a></li>
+      </ul>
+    </nav>
+    <main>
+      <form class="edit">
+        <h1>Edit Task</h1>
+        <div>
+          <div>
+            <label for="taskid">Task ID </label>
+            <div class="taskid">123456789</div>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Take Out Trashes" />
+          </div>
+          <div>
+            <label for="completed" aria-label="empty checkbox">Completed</label>
+            <input type="checkbox" id="completed" />
+          </div>
+        </div>
+        <button type="submit">Edit</button>
+        <p>There was an error</p>
+      </form>
+      <a href="index.html" class="blackbtn">Back To Tasks</a>
+    </main>
+  </body>
+</html>

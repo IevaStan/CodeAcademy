@@ -1,3 +1,15 @@
+@keyframes jumping {
+  0% {
+    top: 3px;
+  }
+  50% {
+    top: -3px;
+  }
+  100% {
+    top: 3px;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap");
 
 :root {
@@ -64,13 +76,6 @@ header a {
 header p {
   color: var(--maindark);
 }
-.button {
-  background-color: var(--maincolor);
-  color: white;
-  padding: 13px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 .offer {
   background-color: var(--mainlight);
 }
@@ -117,4 +122,10 @@ main p {
 main img {
   max-width: 60vw;
   margin: 30px;
+  position: relative;
+  /* animation-name: jumping;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+  animation: jumping 2s ease-in-out 0s infinite normal;
 }

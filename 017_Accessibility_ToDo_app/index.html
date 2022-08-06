@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Application to manage your daily chores">
+    <title>To Do App page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Best <span class="boldBlue">ToDo</span> App</h1>
+      <ul>
+        <li><a href="#" class="fa fa-facebook" aria-label="facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter" aria-label="twitter"></a></li>
+        <li><a href="#" class="fa fa-linkedin-square" aria-label="linkedin"></a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form>
+        <h1>Your Tasks</h1>
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="e.g. wash dishes"
+            minlength="10"
+          />
+          <button type="submit">Add</button>
+        </div>
+        <p>There was an error</p>
+      </form>
+
+      <div class="task">
+        <a href="#" class="fa fa-circle-o" aria-label="empty checkmark"></a>
+        <h1>Take Out Trashes</h1>
+        <a href="task.html" class="fa fa-edit" aria-label="edit"></a>
+        <a href="#" class="fa fa-trash" aria-label="delete"></a>
+      </div>
+
+      <div class="task">
+        <a href="#" class="fa fa-check-circle" aria-label="checkmark ticked"></a>
+        <h1>Walk The Dog</h1>
+        <a href="#" class="fa fa-edit" aria-label="edite"></a>
+        <a href="#" class="fa fa-trash" aria-label="delete"></a>
+      </div>
+    </main>
+  </body>
+</html>

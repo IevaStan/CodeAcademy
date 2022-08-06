@@ -1,0 +1,50 @@
+@keyframes jump {
+  0% {
+    top: 3px;
+    background-color: blue;
+  }
+  50% {
+    top: -3px;
+    background-color: yellow;
+  }
+  100% {
+    top: 3px;
+    background-color: blue;
+  }
+}
+body {
+  background-color: azure;
+}
+div {
+  width: 500px;
+  height: 200px;
+}
+div:first-child {
+  background-color: aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  transition: width 2s ease-in-out 0;
+}
+div:first-child:hover {
+  width: 520px;
+}
+div:nth-child(2) {
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  transition: color 5s linear, width 1.5s ease-out, border-radius 1s linear,
+    transform 2s linear;
+}
+div:nth-child(2):hover {
+  width: 520px;
+  background-color: violet;
+  border-radius: 10px;
+  transform: rotate(180deg);
+}
+div:nth-child(3) {
+  position: relative;
+  background-color: blue;
+  border: 1px solid green;
+  border-radius: 20px;
+  animation: jump 2s ease-in-out 0s infinite normal;
+}
