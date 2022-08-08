@@ -1,0 +1,96 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6fc;
+}
+
+main {
+  max-width: 80%;
+}
+
+.col {
+  width: calc(25% - 40px);
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+  height: 100%;
+}
+
+.btn {
+  color: #73829e;
+  border-color: #303ca5;
+  padding: 15px 30px;
+  font-size: larger;
+}
+
+.pricing {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "price currency" "price permonth";
+  font-weight: 600;
+  background-color: #f4f6fc;
+  border-radius: 100px;
+  padding: 10px 30px;
+  margin: 10px auto 30px auto;
+  max-width: 70%;
+}
+
+.price {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: price;
+  font-size: 55px;
+  text-align: right;
+  line-height: 66px;
+}
+
+.currency {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: currency;
+  font-size: 24px;
+  text-align: left;
+  line-height: 32px;
+}
+
+.permonth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: permonth;
+  font-size: 24px;
+  text-align: left;
+  line-height: 36px;
+}
+
+.text-muted {
+  color: #73829e;
+}
+
+.list.card-text {
+  -webkit-text-decoration: underline dotted #73829e;
+          text-decoration: underline dotted #73829e;
+  text-underline-offset: 5px;
+}
+
+.text-muted {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nobtmmargin {
+  margin-bottom: 0px;
+}
+
+.card-text.text-muted.list {
+  font-size: smaller;
+}
+/*# sourceMappingURL=style.css.map */
