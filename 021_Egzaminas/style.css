@@ -22,6 +22,28 @@
   }
 }
 
+@-webkit-keyframes carousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+}
+
+@keyframes carousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+}
+
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -153,7 +175,8 @@ header {
           animation: none;
 }
 
-.signup .redmonster, .signup .green-jacket {
+.signup .redmonster,
+.signup .green-jacket {
   overflow: hidden;
 }
 
@@ -169,21 +192,68 @@ header {
   font-weight: 400;
 }
 
-.companies ul {
-  list-style: none;
-  padding: 0;
-  margin: 50px 20px;
+.companies-carousel {
+  margin: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.companies ul img {
-  height: 2.5rem;
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, white, rgba(255, 255, 255, 0.2));
+  z-index: 1;
+}
+
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, rgba(255, 255, 255, 0.2), white);
+  z-index: 1;
+}
+
+.carousels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: carousel linear 10s infinite;
+          animation: carousel linear 10s infinite;
+}
+
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.company img {
+  max-height: 30px;
 }
 
 .shop {
@@ -277,7 +347,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #2f4f30;
+  color: #2e4d4d;
   font-size: 0.9rem;
 }
 
@@ -497,9 +567,6 @@ footer h5 {
   }
   .earlybirds h1 {
     font-size: 1.7rem;
-  }
-  .companies ul li:first-child {
-    display: none;
   }
   .shop {
     padding: 2rem 0rem 2rem 20px;

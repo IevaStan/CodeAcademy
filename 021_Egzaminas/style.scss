@@ -1,10 +1,9 @@
 // VARIABLES
-
-$pink: #fe3897;
-$grey: rgb(202, 200, 200);
-$midgrey: rgb(121, 120, 120);
-$darkgrey: rgb(46, 77, 77);
-$pinkgrad: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
+$bold: #fe3897;
+$light: rgb(202, 200, 200);
+$mid: rgb(121, 120, 120);
+$dark: rgb(46, 77, 77);
+$boldgrad: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
 
 @keyframes jumping {
   0% {
@@ -15,6 +14,14 @@ $pinkgrad: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
   }
   100% {
     top: 3px;
+  }
+}
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-800px);
   }
 }
 
@@ -46,9 +53,9 @@ header {
   li {
     margin: 0 1rem;
     overflow: hidden;
-    color: $midgrey;
+    color: $mid;
     &:last-child {
-      color: $pink;
+      color: $bold;
     }
   }
 }
@@ -78,14 +85,14 @@ header {
     line-height: 5rem;
   }
   h3 {
-    color: $pink;
+    color: $bold;
   }
   p {
-    color: $darkgrey;
+    color: $dark;
   }
   button {
     border: solid 3.5px transparent;
-    background-image: linear-gradient(white, white), $pinkgrad;
+    background-image: linear-gradient(white, white), $boldgrad;
     background-origin: border-box;
     background-clip: content-box, border-box;
     box-shadow: 2px 1000px 1px #fff inset;
@@ -94,13 +101,13 @@ header {
     &:hover {
       font-weight: bold;
       box-shadow: 0px 0px 0px #fff inset;
-      background-image: $pinkgrad, $pinkgrad;
+      background-image: $boldgrad, $boldgrad;
       cursor: pointer;
     }
   }
   &:last-of-type {
-    border-bottom: solid 1px $grey;
-    border-top: solid 1px $grey;
+    border-bottom: solid 1px $light;
+    border-top: solid 1px $light;
     padding-bottom: 0;
     .text {
       padding-bottom: 20px;
@@ -109,7 +116,8 @@ header {
       animation: none;
     }
   }
-  .redmonster, .green-jacket {
+  .redmonster,
+  .green-jacket {
     overflow: hidden;
   }
 }
@@ -129,16 +137,48 @@ header {
 
 // COMPANIES SECTION
 
-.companies ul {
-  list-style: none;
-  padding: 0;
-  margin: 50px 20px;
+.companies-carousel {
+  margin: 50px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  img {
-    height: 2.5rem;
-  }
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, white, rgba(255, 255, 255, 0.2));
+  z-index: 1;
+}
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, rgba(255, 255, 255, 0.2), white);
+  z-index: 1;
+}
+.carousels {
+  display: flex;
+  animation: carousel linear 10s infinite;
+}
+.companies {
+  display: flex;
+  align-items: center;
+}
+.company {
+  width: 100%;
+  padding: 0 10px;
+}
+.company img {
+  max-height: 30px;
 }
 
 // SHOP SECTION
@@ -150,11 +190,11 @@ header {
     font-size: 1.7rem;
   }
   a {
-    color: $darkgrey;
+    color: $dark;
     font-weight: 500;
   }
   p {
-    color: $darkgrey;
+    color: $dark;
   }
   .sales {
     margin-top: 3rem;
@@ -167,7 +207,7 @@ header {
         margin: 0 1rem 0 0;
       }
       .description {
-        background-color: $grey;
+        background-color: $light;
         padding: 1rem;
         border-radius: 0 0 15px 15px;
         margin-top: -6px;
@@ -200,7 +240,7 @@ header {
         .details {
           display: flex;
           justify-content: space-between;
-          color: rgb(47, 79, 48);
+          color: $dark;
           font-size: 0.9rem;
         }
       }
@@ -216,7 +256,7 @@ footer {
   padding: 50px 20px;
   p,
   a {
-    color: $darkgrey;
+    color: $dark;
     text-decoration: none;
   }
   .toggle {
@@ -228,7 +268,7 @@ footer {
     padding: 0;
     text-align: left;
     a {
-      color: $grey;
+      color: $light;
       padding-right: 20px;
     }
   }
@@ -252,17 +292,17 @@ footer {
     a {
       padding-bottom: 10px;
       width: 100%;
-      color: $midgrey;
+      color: $mid;
     }
   }
   h4 {
-    color: $darkgrey;
+    color: $dark;
     font-size: 0.9rem;
     text-transform: uppercase;
-    }
+  }
   h5 {
     font-weight: 500;
-    color: $grey;
+    color: $light;
   }
 }
 
@@ -295,7 +335,7 @@ footer {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: $grey;
+    background-color: $light;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -330,15 +370,15 @@ footer {
     transition: height 400ms ease-out;
   }
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid $grey;
+    border: 1px solid $light;
     height: 2.5rem;
     padding: 0.5rem;
     transition: height 400ms ease-out;
     &:last-child {
-      border-bottom: 3px solid $grey;
+      border-bottom: 3px solid $light;
     }
     &:first-child {
-      border-top: 3px solid $grey;
+      border-top: 3px solid $light;
     }
   }
 
@@ -389,12 +429,6 @@ footer {
     h1 {
       font-size: 1.7rem;
     }
-  }
-
-  // COMPANIES SECTION
-
-  .companies ul li:first-child {
-    display: none;
   }
 
   // SHOP SECTION

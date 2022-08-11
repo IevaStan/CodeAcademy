@@ -1,0 +1,53 @@
+@keyframes carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-800px);
+    }
+  }
+  
+  .companies-carousel {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .carousel-container::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(80deg, white, rgba(255, 255, 255, 0.2));
+    z-index: 1;
+  }
+  .carousel-container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(80deg, rgba(255, 255, 255, 0.2), white);
+    z-index: 1;
+  }
+  .carousels {
+    display: flex;
+    animation: carousel linear 10s infinite;
+  }
+  .companies {
+    display: flex;
+    align-items: center;
+  }
+  .company {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .company img {
+    max-height: 30px;
+  }
+  
