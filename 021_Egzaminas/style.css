@@ -186,25 +186,25 @@ header {
   height: 2.5rem;
 }
 
-.products {
+.shop {
   padding: 3.5rem 20px;
 }
 
-.products h1 {
+.shop h1 {
   font-weight: 400;
   font-size: 1.7rem;
 }
 
-.products a {
+.shop a {
   color: #2e4d4d;
   font-weight: 500;
 }
 
-.products p {
+.shop p {
   color: #2e4d4d;
 }
 
-.products .sales {
+.shop .sales {
   margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,18 +216,18 @@ header {
   overflow-y: hidden;
 }
 
-.products .sales .card:not(:last-child) {
+.shop .sales .card:not(:last-child) {
   margin: 0 1rem 0 0;
 }
 
-.products .sales .card .description {
+.shop .sales .card .description {
   background-color: #cac8c8;
   padding: 1rem;
   border-radius: 0 0 15px 15px;
   margin-top: -6px;
 }
 
-.products .sales .card .description .image-text {
+.shop .sales .card .description .image-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,16 +237,16 @@ header {
   line-height: 0.1;
 }
 
-.products .sales .card .description .image-text .series {
+.shop .sales .card .description .image-text .series {
   color: #fb8518;
   font-size: 0.7rem;
 }
 
-.products .sales .card .description .image-text .topbid {
+.shop .sales .card .description .image-text .topbid {
   font-size: 0.6rem;
 }
 
-.products .sales .card .description .name-price {
+.shop .sales .card .description .name-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,21 +256,21 @@ header {
   font-weight: bold;
 }
 
-.products .sales .card .description .name-price .name {
+.shop .sales .card .description .name-price .name {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.products .sales .card .description .name-price .price {
+.shop .sales .card .description .name-price .price {
   margin-left: 1rem;
 }
 
-.products .sales .card .description .name-price .price img {
+.shop .sales .card .description .name-price .price img {
   margin: 0 0.2rem;
 }
 
-.products .sales .card .description .details {
+.shop .sales .card .description .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +501,7 @@ footer h5 {
   .companies ul li:first-child {
     display: none;
   }
-  .products {
+  .shop {
     padding: 2rem 0rem 2rem 20px;
   }
   footer {
