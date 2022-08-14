@@ -1,0 +1,51 @@
+$maincolor: #e80d85;
+body {
+  margin: 50px 0;
+}
+.hover {
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+  }
+  &:after {
+    top: 50%;
+  }
+  &:before {
+    bottom: 50%;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+      height: 3px;
+      top: 0;
+    }
+    &:before {
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+    }
+  }
+}
+span {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  &:before,
+  &:after {
+    transition: all 1s ease 0s;
+  }
+  &:hover {
+    outline: 0;
+    color: $maincolor;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:before,
+    &:after {
+      background-color: $maincolor;
+    }
+  }
+ 
+}

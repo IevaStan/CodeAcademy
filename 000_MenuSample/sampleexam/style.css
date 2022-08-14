@@ -28,8 +28,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
   }
 }
 
@@ -39,8 +39,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
   }
 }
 
@@ -87,16 +87,9 @@ header {
 }
 
 .menu li {
+  margin: 0 1rem;
   overflow: hidden;
   color: #797878;
-  padding: 1rem;
-}
-
-.menu li:hover {
-  font-weight: bold;
-  background-color: #ebebeb;
-  border-radius: 5px;
-  text-transform: uppercase;
 }
 
 .menu li:last-child {
@@ -148,8 +141,8 @@ header {
 
 .signup button {
   border: solid 3.5px transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
-  background-image: linear-gradient(white, white), linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
+  background-image: linear-gradient(white, white), linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
   background-origin: border-box;
   background-clip: content-box, border-box;
   -webkit-box-shadow: 2px 1000px 1px #fff inset;
@@ -162,8 +155,8 @@ header {
   font-weight: bold;
   -webkit-box-shadow: 0px 0px 0px #fff inset;
           box-shadow: 0px 0px 0px #fff inset;
-  background-image: -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169)), -webkit-gradient(linear, left top, right top, from(#fe3897), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
-  background-image: linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169), linear-gradient(to right, #fe3897, #ff5242, #ff8139, #c6b169);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169)), -webkit-gradient(linear, left top, right top, from(#ff487d), color-stop(#ff5242), color-stop(#ff8139), to(#c6b169));
+  background-image: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169), linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
   cursor: pointer;
 }
 
@@ -189,7 +182,6 @@ header {
 
 .earlybirds {
   background-image: url(assets/background.svg);
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 6.5rem 1.5rem 2.5rem 3.5rem;
   border-radius: 15px;
@@ -216,7 +208,6 @@ header {
 .carousel-container {
   overflow: hidden;
   position: relative;
-  max-width: 1250px;
 }
 
 .carousel-container::before {
@@ -243,9 +234,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: carousel 10s linear 0s infinite normal;
-          animation: carousel 10s linear 0s infinite normal;
-  width: 1800px;
+  -webkit-animation: carousel linear 10s infinite;
+          animation: carousel linear 10s infinite;
 }
 
 .companies {
@@ -319,12 +309,11 @@ header {
 
 .shop .sales .card .description .image-text .series {
   color: #fb8518;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .shop .sales .card .description .image-text .topbid {
-  font-size: 0.8rem;
-  color: #797878;
+  font-size: 0.6rem;
 }
 
 .shop .sales .card .description .name-price {
@@ -358,26 +347,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #2e4d4d;
   font-size: 0.9rem;
-}
-
-.shop .sales .card .description .details p {
-  color: #797878;
-}
-
-.shop .sales .card:hover {
-  border-radius: 15px;
-  -webkit-box-shadow: 20px 15px 10px -15px #cac8c8;
-          box-shadow: 20px 15px 10px -15px #cac8c8;
-}
-
-.shop .sales .card:hover .description {
-  background-color: #797878;
-}
-
-.shop .sales .card:hover .description p,
-.shop .sales .card:hover .description .topbid {
-  color: #ebebeb;
 }
 
 footer {
@@ -411,10 +382,6 @@ footer .social-media-icons {
 footer .social-media-icons a {
   color: #cac8c8;
   padding-right: 20px;
-}
-
-footer .social-media-icons a:hover {
-  color: #797878;
 }
 
 footer .footer-header,
@@ -490,22 +457,17 @@ footer h5 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 1;
   }
   .menu li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
     padding: 0.5rem 0;
     width: 100%;
-    background-color: white;
   }
   .menu-button,
   .menu-button::before,
@@ -528,9 +490,6 @@ footer h5 {
   .menu-button:after {
     content: "";
     margin-top: 8px;
-  }
-  #menu-toggle:checked + .menu-button-container .menu-button {
-    background: white;
   }
   #menu-toggle:checked + .menu-button-container .menu-button:before {
     margin-top: 0px;

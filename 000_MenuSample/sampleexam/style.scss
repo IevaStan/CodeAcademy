@@ -1,10 +1,9 @@
 // VARIABLES
 $bold: #fe3897;
-$verylight: rgb(235, 235, 235);
 $light: rgb(202, 200, 200);
 $mid: rgb(121, 120, 120);
 $dark: rgb(46, 77, 77);
-$boldgrad: linear-gradient(to right, $bold, #ff5242, #ff8139, #c6b169);
+$boldgrad: linear-gradient(to right, #ff487d, #ff5242, #ff8139, #c6b169);
 
 @keyframes jumping {
   0% {
@@ -22,7 +21,7 @@ $boldgrad: linear-gradient(to right, $bold, #ff5242, #ff8139, #c6b169);
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1000px);
+    transform: translateX(-800px);
   }
 }
 
@@ -52,15 +51,9 @@ header {
   list-style-type: none;
   padding: 0;
   li {
+    margin: 0 1rem;
     overflow: hidden;
     color: $mid;
-    padding: 1rem;
-    &:hover {
-      font-weight: bold;
-      background-color: $verylight;
-      border-radius: 5px;
-      text-transform: uppercase;
-    }
     &:last-child {
       color: $bold;
     }
@@ -133,7 +126,6 @@ header {
 
 .earlybirds {
   background-image: url(assets/background.svg);
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 6.5rem 1.5rem 2.5rem 3.5rem;
   border-radius: 15px;
@@ -154,30 +146,28 @@ header {
 .carousel-container {
   overflow: hidden;
   position: relative;
-  max-width: 1250px;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background: linear-gradient(80deg, white, rgba(255, 255, 255, 0.2));
-    z-index: 1;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 100%;
-    background: linear-gradient(80deg, rgba(255, 255, 255, 0.2), white);
-    z-index: 1;
-  }
+}
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, white, rgba(255, 255, 255, 0.2));
+  z-index: 1;
+}
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(80deg, rgba(255, 255, 255, 0.2), white);
+  z-index: 1;
 }
 .carousels {
   display: flex;
-  animation: carousel 10s linear 0s infinite normal;
-  width: 1800px;
+  animation: carousel linear 10s infinite;
 }
 .companies {
   display: flex;
@@ -186,9 +176,9 @@ header {
 .company {
   width: 100%;
   padding: 0 10px;
-  img {
-    max-height: 30px;
-  }
+}
+.company img {
+  max-height: 30px;
 }
 
 // SHOP SECTION
@@ -227,11 +217,10 @@ header {
           line-height: 0.1;
           .series {
             color: rgb(251, 133, 24);
-            font-size: 0.9rem;
+            font-size: 0.7rem;
           }
           .topbid {
-            font-size: 0.8rem;
-            color: $mid;
+            font-size: 0.6rem;
           }
         }
         .name-price {
@@ -251,21 +240,8 @@ header {
         .details {
           display: flex;
           justify-content: space-between;
+          color: $dark;
           font-size: 0.9rem;
-          p {
-            color: $mid;
-          }
-        }
-      }
-      &:hover {
-        border-radius: 15px;
-        box-shadow: 20px 15px 10px -15px $light;
-        .description {
-          background-color: $mid;
-          p,
-          .topbid {
-            color: $verylight;
-          }
         }
       }
     }
@@ -294,9 +270,6 @@ footer {
     a {
       color: $light;
       padding-right: 20px;
-      &:hover {
-        color: $mid;
-      }
     }
   }
   .footer-header,
@@ -350,15 +323,12 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     li {
       display: flex;
-      align-items: center;
       justify-content: center;
       margin: 0;
       padding: 0.5rem 0;
       width: 100%;
-      background-color: white;
     }
   }
   .menu-button,
@@ -383,7 +353,6 @@ footer {
     }
   }
   #menu-toggle:checked + .menu-button-container .menu-button {
-    background: white;
     &:before {
       margin-top: 0px;
       transform: rotate(45deg);
