@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("/019_Bakery_page_Vytenis/assets/Fonts/proximaNova-regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Scriptina";
+  src: url("/019_Bakery_page_Vytenis/assets/Fonts/scriptina-regular.ttf")
+    format("truetype");
+}
+$lightest: rgb(255, 255, 255);
+$vlight: rgba(252, 252, 242, 0);
+$light: lightgrey;
+$sand: #a67f60;
+$text: #56534c;
+$grey: #b6b5b1;
+
+// HEADER
+
+header {
+  height: 100vh;
+  color: $lightest;
+  background-image: url("/019_Bakery_page_Vytenis/assets/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  nav {
+    background-image: url("/019_Bakery_page_Vytenis/assets/nav_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: "Scriptina";
+      letter-spacing: 0.6rem;
+      font-weight: 400;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          color: $lightest;
+          padding: 10px;
+          text-transform: uppercase;
+          font-family: "ProximaNova";
+          font-size: 0.8rem;
+          // font-weight: 600;
+          letter-spacing: 0.2rem;
+          &:hover {
+            cursor: pointer;
+            color: $light;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .menu-links li a {
+      padding: 10px 25px;
+    }
+  }
+  h1 {
+    letter-spacing: 0.4rem;
+    font-weight: 600;
+    font-size: 5.5rem;
+    text-align: center;
+    padding-top: 120px;
+    text-shadow: 0px 1px 0px black;
+  }
+  .dashed-line {
+    text-align: center;
+  }
+  p {
+    font-family: "ProximaNova";
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-shadow: 0px 1px 0px black;
+    line-height: 0.6;
+    &:first-of-type {
+      margin-top: 65px;
+    }
+  }
+  button {
+    display: block;
+    margin: 70px auto;
+    border: 1px dashed grey;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 3rem;
+    color: $lightest;
+    text-shadow: 0px 1px 0px black;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+// CAKES
+
+.cakes {
+  height: 85vh;
+  background-image: url("/019_Bakery_page_Vytenis/assets/cakes_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 50px;
+  > div {
+    &:first-child {
+      img {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -53px;
+      }
+    }
+    &:nth-child(2) {
+      img {
+        background-color: $lightest;
+        outline: 13px solid $lightest;
+        outline-offset: 0px;
+        border-radius: 50px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -128.5px;
+      }
+    }
+    &:nth-child(3) {
+      height: 75vh;
+      position: relative;
+      top: -160px;
+      margin-top: 130px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .left {
+        height: 75vh;
+        width: 50%;
+        margin-left: 20px;
+        color: $text;
+        h1 {
+          font-size: 2.5rem;
+          margin: 0;
+        }
+        h3 {
+          color: $sand;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          margin: 0.3rem;
+        }
+        p {
+          &:first-of-type {
+            padding: 2.5rem;
+            font-size: small;
+            font-weight: bold;
+            line-height: 1.5;
+          }
+        }
+        .cook {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            padding: 10px;
+            font-size: 1.5rem;
+            font-weight: 300;
+            border-top: 1px solid $grey;
+            border-bottom: 1px solid $grey;
+          }
+          img {
+            padding: 20px;
+          }
+        }
+        .quote {
+          font-family: "Scriptina";
+          font-size: 2rem;
+          margin: 0;
+          color: $sand;
+          .grey {
+            color: $grey;
+            font-size: 5rem;
+            font-family: "ProximaNova";
+          }
+        }
+      }
+      .right {
+        height: 75vh;
+        width: 50%;
+        margin-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        > div {
+          width: calc(50% - 10px);
+          &:not(:nth-child(5)) {
+            outline: 5px solid $lightest;
+            outline-offset: -15px;
+            margin: 5px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          &:nth-child(5) {
+            position: absolute;
+            transform: translate(-1%, 62%);
+            opacity: 0.95;
+          }
+        }
+      }
+    }
+  }
+}
+
+// PANCAKES
+
+.pancakes {
+  height: 85vh;
+  background-image: url("/019_Bakery_page_Vytenis/assets/pancakes_placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .pancakes-container {
+
+  }
+}

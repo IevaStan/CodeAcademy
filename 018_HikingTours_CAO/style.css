@@ -56,7 +56,7 @@ nav .links li a {
 }
 
 @media only screen and (max-width: 785px) {
-  .links {
+  nav .links {
     display: none;
   }
 }
