@@ -10,3 +10,4 @@ getName()
 console.log(name)
 console.log(newName)
 // newName kintamasis negali būti matomas išėjus iš šų skliaustų: { }
+// kintamieji aprašyti funkcijoje lieka lokalūs
